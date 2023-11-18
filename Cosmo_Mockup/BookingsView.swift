@@ -39,9 +39,9 @@ struct BookingsView: View {
                     .ignoresSafeArea()
             }
             .listStyle(GroupedListStyle())
-            .navigationBarTitle("Bookings", displayMode: .inline)
-            
+            .navigationBarTitle("Bookings", displayMode: .automatic)
         }
+        .accentColor(.black)
     }
 }
 
@@ -57,7 +57,7 @@ struct CustomRowView: View {
     var body: some View {
         VStack {
             HStack {
-                Image(systemName: "theatermask.and.paintbrush.fill") // Example icon
+                Image(systemName: "calendar.badge.clock") // Example icon
                     .foregroundColor(.black)
                     .font(.system(size: 36))
                 Text(title)

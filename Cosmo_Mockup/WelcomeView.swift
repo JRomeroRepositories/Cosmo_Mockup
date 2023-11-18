@@ -53,6 +53,7 @@ struct WelcomeView: View {
                 }
             }
         }
+        .accentColor(.black)
     }
 }
 
