@@ -18,6 +18,7 @@ struct ProfessionalView: View {
                 Text("Welcome Back \n Jorgen Von Strangle!")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
+                    .foregroundColor(Color("Wanda_Pink"))
                 
                 Image("Cosmo_Logo")
                     .resizable()
@@ -27,11 +28,11 @@ struct ProfessionalView: View {
                 
                 
                 
-                NavigationLink(destination: ProfessionalView()) {
+                NavigationLink(destination: BookingsView()) {
                     Text("View Bookings and Requests")
-                        .font(.headline)
+                        .font(.title2)
                         .fontWeight(.semibold)
-                        .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
+                        .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: 60)
                 }
                 .padding()
                 .background(Color("Button"))
@@ -42,9 +43,9 @@ struct ProfessionalView: View {
                 
                 NavigationLink(destination: ProfessionalView()) {
                     Text("Update Account")
-                        .font(.headline)
+                        .font(.title2)
                         .fontWeight(.semibold)
-                        .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/20.0/*@END_MENU_TOKEN@*/)
+                        .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: 60)
                 }
                 .padding()
                 .background(Color("Button"))
