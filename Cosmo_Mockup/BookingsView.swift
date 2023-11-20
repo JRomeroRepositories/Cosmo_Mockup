@@ -16,7 +16,7 @@ struct BookingsView: View {
         Booking(bookingID: 5, customerName: "J. Romero", date: "2023-01-19", time: "3:00 PM", rating: 2, task: "Makeup"),
         Booking(bookingID: 6, customerName: "Amisha Kaur", date: "2023-01-20", time: "9:30 AM", rating: 4, task: "Hair Coloring"),
         Booking(bookingID: 7, customerName: "Charles Luo", date: "2023-01-21", time: "12:00 PM", rating: 5, task: "Pedicure"),
-        Booking(bookingID: 8, customerName: "Dasarthy Mutharasan", date: "2023-01-22", time: "4:15 PM", rating: 3, task: "Eyebrow Waxing"),
+        Booking(bookingID: 8, customerName: "Dasarathy Mutharasan", date: "2023-01-22", time: "4:15 PM", rating: 3, task: "Eyebrow Waxing"),
         Booking(bookingID: 9, customerName: "Pallavi Sharma", date: "2023-01-23", time: "2:00 PM", rating: 5, task: "Hair Styling"),
         Booking(bookingID: 10, customerName: "Sivanuja Gathieswaran", date: "2023-01-24", time: "10:45 AM", rating: 4, task: "Nail Art")
     ]

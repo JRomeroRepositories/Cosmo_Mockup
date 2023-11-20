@@ -42,6 +42,19 @@ struct ProfessionalView: View {
                     .stroke(Color.black, lineWidth: 1.5))
                 
                 NavigationLink(destination: ProfessionalView()) {
+                    Text("Update Availibility")
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                        .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: 60)
+                }
+                .padding()
+                .background(Color("Button"))
+                .foregroundColor(.black)
+                .cornerRadius(20)
+                .overlay(RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.black, lineWidth: 1.5))
+                
+                NavigationLink(destination: ProfessionalView()) {
                     Text("Update Account")
                         .font(.title2)
                         .fontWeight(.semibold)
