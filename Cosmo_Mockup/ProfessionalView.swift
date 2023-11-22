@@ -27,7 +27,6 @@ struct ProfessionalView: View {
                     .position(.init(x: 320, y: -115))
                 
                 
-                
                 NavigationLink(destination: BookingsView()) {
                     Text("View Bookings and Requests")
                         .font(.title2)
@@ -41,8 +40,8 @@ struct ProfessionalView: View {
                 .overlay(RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.black, lineWidth: 1.5))
                 
-                NavigationLink(destination: ProfessionalView()) {
-                    Text("Update Availibility")
+                NavigationLink(destination: UpdateAvailabilityView()) {
+                    Text("Update Availability")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: 60)
