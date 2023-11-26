@@ -10,6 +10,7 @@
 		F46CBA1D2B0D44F8008FD716 /* UpdateAvailabilityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46CBA1C2B0D44F8008FD716 /* UpdateAvailabilityView.swift */; };
 		F46CBA1F2B0D5F26008FD716 /* BrowseProvidersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46CBA1E2B0D5F26008FD716 /* BrowseProvidersView.swift */; };
 		F46CBA212B0DA1D6008FD716 /* ServiceProvidersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46CBA202B0DA1D6008FD716 /* ServiceProvidersModel.swift */; };
+		F48B65172B12A49D008AF6E8 /* StarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48B65162B12A49D008AF6E8 /* StarsView.swift */; };
 		F4B8258C2B08678400E015B2 /* Cosmo_MockupApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8258B2B08678400E015B2 /* Cosmo_MockupApp.swift */; };
 		F4B8258E2B08678400E015B2 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B8258D2B08678400E015B2 /* WelcomeView.swift */; };
 		F4B825902B08678500E015B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B8258F2B08678500E015B2 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		F46CBA1C2B0D44F8008FD716 /* UpdateAvailabilityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateAvailabilityView.swift; sourceTree = "<group>"; };
 		F46CBA1E2B0D5F26008FD716 /* BrowseProvidersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseProvidersView.swift; sourceTree = "<group>"; };
 		F46CBA202B0DA1D6008FD716 /* ServiceProvidersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvidersModel.swift; sourceTree = "<group>"; };
+		F48B65162B12A49D008AF6E8 /* StarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsView.swift; sourceTree = "<group>"; };
 		F4B825882B08678400E015B2 /* Cosmo_Mockup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cosmo_Mockup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B8258B2B08678400E015B2 /* Cosmo_MockupApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cosmo_MockupApp.swift; sourceTree = "<group>"; };
 		F4B8258D2B08678400E015B2 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 				F46CBA202B0DA1D6008FD716 /* ServiceProvidersModel.swift */,
 				F4B8258B2B08678400E015B2 /* Cosmo_MockupApp.swift */,
 				F46CBA1E2B0D5F26008FD716 /* BrowseProvidersView.swift */,
+				F48B65162B12A49D008AF6E8 /* StarsView.swift */,
 				F4B8258D2B08678400E015B2 /* WelcomeView.swift */,
 				F4B8259A2B08694E00E015B2 /* ProfessionalView.swift */,
 				F46CBA1C2B0D44F8008FD716 /* UpdateAvailabilityView.swift */,
@@ -159,6 +162,7 @@
 			files = (
 				F46CBA1D2B0D44F8008FD716 /* UpdateAvailabilityView.swift in Sources */,
 				F4B8259D2B08A83700E015B2 /* BookingsView.swift in Sources */,
+				F48B65172B12A49D008AF6E8 /* StarsView.swift in Sources */,
 				F4B8258E2B08678400E015B2 /* WelcomeView.swift in Sources */,
 				F4B8259B2B08694E00E015B2 /* ProfessionalView.swift in Sources */,
 				F4B8258C2B08678400E015B2 /* Cosmo_MockupApp.swift in Sources */,
