@@ -38,7 +38,7 @@ struct WelcomeView: View {
                     .overlay(RoundedRectangle(cornerRadius: 20)
                                 .stroke(Color.black, lineWidth: 1.5))
 
-                    NavigationLink(destination: ProfessionalView()) {
+                    NavigationLink(destination: ClientView()) {
                         Text("I'm Looking For Cosmetic Services")
                             .font(.headline)
                             .fontWeight(.semibold)

@@ -1,13 +1,14 @@
 //
-//  ProfessionalView.swift
+//  ClientView.swift
 //  Cosmo_Mockup
 //
-//  Created by J. Romero on 2023-11-17.
+//  Created by J. Romero on 2023-11-28.
 //
 
 import SwiftUI
 
-struct ProfessionalView: View {
+
+struct ClientView: View {
     var body: some View {
         ZStack {
             Color("Background")
@@ -15,10 +16,11 @@ struct ProfessionalView: View {
             VStack {
                 Spacer()
                     .frame(height: 50)
-                Text("Welcome Back \n Jorgen Von Strangle!")
+                Text("Welcome Back \n Timmy Turner!")
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .foregroundColor(Color("Wanda_Pink"))
+                    .position(CGPoint(x: 0150.0, y: 25.0))
                 
                 Image("Cosmo_Logo")
                     .resizable()
@@ -26,7 +28,7 @@ struct ProfessionalView: View {
                     .frame(width: 80, height: 80)
                     .position(.init(x: 320, y: -115))
                 
-                Image("SchoolsOut1019")
+                Image("Timmy20")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 260, height: 260)
@@ -35,8 +37,9 @@ struct ProfessionalView: View {
                     .overlay(Circle().stroke(Color.black, lineWidth: 2))
                     .position(CGPoint(x: 197.0, y: -30.0))
                 
-                NavigationLink(destination: BookingsView()) {
-                    Text("View Bookings and Requests")
+                
+                NavigationLink(destination: BrowseProvidersDistViewModel()) {
+                    Text("Browse Near Me")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: 30)
@@ -48,8 +51,8 @@ struct ProfessionalView: View {
                 .overlay(RoundedRectangle(cornerRadius: 20)
                     .stroke(Color.black, lineWidth: 1.5))
                 
-                NavigationLink(destination: UpdateAvailabilityView()) {
-                    Text("Update Availability")
+                NavigationLink(destination: BrowseServicesView()) {
+                    Text("Browse By Service")
                         .font(.title2)
                         .fontWeight(.semibold)
                         .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: 30)
@@ -80,5 +83,5 @@ struct ProfessionalView: View {
 }
 
 #Preview {
-    ProfessionalView()
+    ClientView()
 }

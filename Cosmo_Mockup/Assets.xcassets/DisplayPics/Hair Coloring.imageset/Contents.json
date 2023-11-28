@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "DALL·E 2023-11-28 13.56.07 - A close-up, cartoonish advertisement image in a style reminiscent of 'Fairly Odd Parents'. The image focuses on the head and shoulders of a cartoon ch.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
