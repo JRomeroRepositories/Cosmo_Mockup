@@ -26,6 +26,15 @@ struct ProfessionalView: View {
                     .frame(width: 80, height: 80)
                     .position(.init(x: 320, y: -115))
                 
+                Image("SchoolsOut1019")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 280, height: 280)
+                    .scaleEffect(1.37)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .overlay(Circle().stroke(Color.black, lineWidth: 2))
+                    .position(CGPoint(x: 197.0, y: -5.0))
+                
                 
                 NavigationLink(destination: BookingsView()) {
                     Text("View Bookings and Requests")

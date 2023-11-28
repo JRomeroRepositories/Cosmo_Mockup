@@ -82,6 +82,7 @@ struct CustomRowView: View {
     }
 }
 
+
 struct BookingDetailView: View {
     var booking: Booking
 
