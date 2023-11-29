@@ -31,7 +31,7 @@ struct UpdateAvailabilityView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 420, height: 420)
-                    .position(.init(x: 190, y: -100))
+                    .position(.init(x: 200, y: -100))
                
                 
                 Text("Save")

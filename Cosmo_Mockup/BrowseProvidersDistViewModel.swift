@@ -26,7 +26,6 @@ struct BrowseProvidersDistViewModel: View {
                 .navigationBarTitle("Providers by distance", displayMode: .automatic)
             }
         }
-        .navigationBarHidden(true)
         .accentColor(.black)
     }
 }

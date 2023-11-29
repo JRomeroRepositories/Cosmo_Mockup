@@ -38,5 +38,5 @@ struct BrowseProvidersServViewModel: View {
 }
 
 #Preview {
-    BrowseProvidersServViewModel(serviceName: "Manicure")
+    BrowseProvidersServViewModel(serviceName: "Hair Coloring")
 }
