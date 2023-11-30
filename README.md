@@ -1,10 +1,13 @@
-# Cosmo_Mockup
- Mockup UI for Technology Development Course At the University of Waterloo Fall 2023
- - The UI was insprired in an endevour to develop a product development business plan for an Application to connect cosmetics professionals to clients
- - See a complete version of the business plan report along with credits for other group members [here](https://github.com/JRomeroRepositories/Cosmo_Mockup/files/13517918/Cosmo.Product.Development.Business.Plan.-.Team.2.-.SCBUS.323.-.Fall.2023.-.University.of.Waterloo.pdf)
+# Cosmo
+## Connecting Cosmetics Providers with Clients Locally!
 
- - Mockup development period was <5 hrs total, due to class time constraints
+ **Mockup UI for Technology Development Course At the University of Waterloo in the Fall of 2023**
+ - The UI was insprired in an endevour to develop a product development business plan for an application to connect cosmetics professionals to clients.
+ - See a complete version of the business plan report [here](https://github.com/JRomeroRepositories/Cosmo_Mockup/files/13517918/Cosmo.Product.Development.Business.Plan.-.Team.2.-.SCBUS.323.-.Fall.2023.-.University.of.Waterloo.pdf) - Note the report has additional authors.
+ - Mockup development period was <5 hrs total, due to class time constraints.
+ - Mockup structure is entirely hardcoded for UI to serve in a pitch environment only.
  - All images and characters are the copyright of Nickelodeon and Paramount Global.
+
 
 <table>
   <tr>
