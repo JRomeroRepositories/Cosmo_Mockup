@@ -8,24 +8,11 @@
 import SwiftUI
 
 struct BookingsView: View {
-    let bookings: [Booking] = [
-        Booking(bookingID: 1, customerName: "Ali Nasseri", date: "2023-01-15", time: "10:00 AM", rating: 5, task: "Haircut"),
-        Booking(bookingID: 2, customerName: "Preet Chudha", date: "2023-01-16", time: "2:30 PM", rating: 4, task: "Manicure"),
-        Booking(bookingID: 3, customerName: "Okey Igboeli", date: "2023-01-17", time: "1:45 PM", rating: 3, task: "Eyebrow Waxing"),
-        Booking(bookingID: 4, customerName: "Echo Chen", date: "2023-01-18", time: "11:15 AM", rating: 5, task: "Massage"),
-        Booking(bookingID: 5, customerName: "J. Romero", date: "2023-01-19", time: "3:00 PM", rating: 2, task: "Makeup"),
-        Booking(bookingID: 6, customerName: "Amisha Kaur", date: "2023-01-20", time: "9:30 AM", rating: 4, task: "Hair Coloring"),
-        Booking(bookingID: 7, customerName: "Charles Luo", date: "2023-01-21", time: "12:00 PM", rating: 5, task: "Pedicure"),
-        Booking(bookingID: 8, customerName: "Dasarathy Mutharasan", date: "2023-01-22", time: "4:15 PM", rating: 3, task: "Eyebrow Waxing"),
-        Booking(bookingID: 9, customerName: "Pallavi Sharma", date: "2023-01-23", time: "2:00 PM", rating: 5, task: "Hair Styling"),
-        Booking(bookingID: 10, customerName: "Sivanuja Gathieswaran", date: "2023-01-24", time: "10:45 AM", rating: 4, task: "Nail Art")
-    ]
-    
     var body: some View {
         NavigationView {
             List(bookings, id: \.bookingID) { booking in
                 NavigationLink(destination: BookingDetailView(booking: booking)) {
-                    CustomRowView(title: booking.customerName, date: booking.date, time: booking.time, task:booking.task)
+                    CustomRowView(title: booking.customerName, date: booking.date, time: booking.time, task:booking.task_)
                 }
                 .listRowBackground(
                     Color("Button")
@@ -44,8 +31,6 @@ struct BookingsView: View {
         .accentColor(.black)
     }
 }
-
-
 
 
 struct CustomRowView: View {
@@ -87,15 +72,61 @@ struct BookingDetailView: View {
     var booking: Booking
 
     var body: some View {
-        VStack {
-            Text("Customer: \(booking.customerName)")
-            Text("Date: \(booking.date)")
-            Text("Time: \(booking.time)")
-            Text("Rating: \(booking.rating)")
-            Text("Task: \(booking.task)")
-            // Add more details as needed
+        NavigationStack {
+            ZStack {
+                Color("Background")
+                    .ignoresSafeArea()
+                HStack {
+                    ScrollView {
+                        VStack {
+                            Text("\(booking.customerName)")
+                                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                    .fontWeight(.semibold)
+                                    .position(CGPoint(x: 100.0, y: 40.0))
+                            Spacer()
+                            VStack (spacing: 5) {
+                                Text("Service type: \(booking.task_)")
+                                Text("Date: \(booking.date)")
+                                Text("Time: \(booking.time)")
+                                StarsView(rating: booking.rating)
+                            }
+                            .position(CGPoint(x: 190.0, y: 20.0))
+                            Spacer()
+                            VStack(alignment: .center) {
+                                Text("Task description")
+                                    .font(.title3)
+                                    .fontWeight(.semibold)
+                                Text("\(booking.task_desc)")
+                                    .multilineTextAlignment(.center)
+                                    .lineLimit(nil)
+                                    .padding(.horizontal)
+                            }
+                            .position(CGPoint(x: 190.0, y: 25.0))
+                        }
+                        .frame(width: 380, height: 300)
+                        .background(Color("Button"))
+                        .foregroundColor(.black)
+                        .cornerRadius(20)
+                        .overlay(RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color.black, lineWidth: 1.5))
+                        
+                        NavigationLink(destination: BlankView()) {
+                            Text("Manage booking")
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                                .frame(width: /*@START_MENU_TOKEN@*/300.0/*@END_MENU_TOKEN@*/, height: 30)
+                        }
+                        .padding()
+                        .background(Color("Button"))
+                        .foregroundColor(.black)
+                        .cornerRadius(20)
+                        .overlay(RoundedRectangle(cornerRadius: 20)
+                            .stroke(Color.black, lineWidth: 1.5))
+                    }
+                }
+            }
         }
-        .navigationBarTitle("Booking Details", displayMode: .inline)
+        .navigationBarTitle("Booking Details", displayMode: .automatic)
     }
 }
 

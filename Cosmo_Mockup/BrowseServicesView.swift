@@ -32,11 +32,10 @@ struct BrowseServicesView: View {
                         }
                     }
                 }
-                .navigationBarHidden(true)
-                .navigationBarTitle("Providers by Service", displayMode: .automatic)
             }
         }
         .accentColor(.black)
+        .navigationBarTitle("Providers by Service", displayMode: .automatic)
     }
 }
 

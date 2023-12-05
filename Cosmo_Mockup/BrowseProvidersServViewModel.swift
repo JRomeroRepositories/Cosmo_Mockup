@@ -16,24 +16,23 @@ struct BrowseProvidersServViewModel: View {
     
     var body: some View {
         NavigationView {
-            ZStack {
-                Color("Background")
-                    .ignoresSafeArea()
-                ScrollView {
+            ScrollView {
+                ZStack {
+                    Color("Background")
+                        .ignoresSafeArea()
                     VStack {
                         ForEach(filteredProviders, id: \.self) { provider in
                             NavigationLink(destination: ProviderProfileView(Provider: provider)) {
                                 ProviderCardView(Provider: provider)
                             }
-                            .navigationBarHidden(true)
                         }
                     }
-                    .navigationBarTitle("Providers for \(serviceName)", displayMode: .automatic)
                 }
             }
-            //.navigationBarHidden(true)
-            .accentColor(.black)
+            .background(Color("Background"))
         }
+        .navigationBarTitle("Providers for \(serviceName)", displayMode: .inline)
+        .accentColor(.black)
     }
 }
 
